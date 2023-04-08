@@ -9,20 +9,12 @@
 <hi>欢迎,<hi>
 	<i>这是我的第一个网站<i>
 <hi>暂时无法使用<hi>
-   <meta charset="UTF-8">
-    <title>计时器</title>
-</head>
-<body>
-    <div id="timer">00:00:00</div>
-    <button id="start">开始</button>
-    <button id="stop">停止</button>
-    <button id="reset">重置</button>
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="{{ url_for('static', filename='timer.js') }}"></script>
+  
 
 </head>
 <body>
-      <button onclick="a()">关于我们</button>
+      <button onclick="a()"">关于我们</button>
+     
      
      <script>
        //点击事件
@@ -32,5 +24,21 @@
          alert("快手号1246627562");
      }
    </script>
+<meta name="viewport" content="user-scalable=no" />
+  <style>
+       .box{
+          width:100px;
+          height:100px;
+          background-color:red;
+        }
+      
+   .box:hover{
+    background-color:blue
+     }
+   
+  </style>
+  </head>
+  <body>
+  <div class="box"></div>
 </body>
 </html>
