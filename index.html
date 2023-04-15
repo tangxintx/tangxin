@@ -71,8 +71,8 @@
      }
    </script> <style id="v5">
        .box{
-           width:120px;
-           height:120px;
+           width:100px;
+           height:100px;
            background:red;
             transition: all 1s;
             position: absolute;
@@ -91,6 +91,30 @@
   
   </style> <script src="js/jq.js"></script> 
    <div id="v7" class="box"> 
+
 </div>
+
+   <style>
+  #red-btn {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: red;
+    padding: 10px;
+    cursor: pointer;
+  }
+</style>
+<script>
+  function showAlert() {
+    setTimeout(function() {
+      alert('加载成功');
+    }, 1500);
+  }
+</script>
+</head>
+<body>
+  <div id="red-btn" onclick="showAlert()">加载本网站</div>
+
+
   </body>
 </html>
